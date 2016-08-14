@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Windows.Forms;
-using System.Windows.Controls;
+
 
 
 namespace DraftKingsLineupGenerator
@@ -50,13 +50,37 @@ namespace DraftKingsLineupGenerator
                 try
                 {
                     _filePath = openFileDialog1.FileName;
+                    textBox.Text = _filePath;
                 }
                 catch (Exception)
                 {
-                    throw new ArgumentNullException("Cannot load the file.");
+                    throw new ArgumentNullException("Cannot load CSV file.");
                 }
             }
 
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+           this.Close();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            var qbMin = Convert.ToInt32(qbMinSalary.Text);
+            var rbMin = Convert.ToInt32(rbMinSalary.Text);
+            var wrMin = Convert.ToInt32(wrMinSalary.Text);
+            var teMin = Convert.ToInt32(teMinSalary.Text);
+            var dstMin = Convert.ToInt32(dstMinSalary.Text);
+            var totalMin = Convert.ToInt32(totalMinSalary.Text);
+
+
+            //Builds player matrix (QB's, RB's, WR's, TE's, DST's, Flex's)
+            var matrix = new PlayerMatrix();
+            var matrixReturn = matrix.BuildPlayerList(qbMin, rbMin, wrMin, teMin, dstMin, _filePath);
+            //Generates lineups
+            var lineUp = new LineUp();
+            lineUp.BuildLineUp(matrixReturn, totalMin, _filePath);
         }
     }
 }
