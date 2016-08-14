@@ -23,6 +23,7 @@ namespace DraftKingsLineupGenerator
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
