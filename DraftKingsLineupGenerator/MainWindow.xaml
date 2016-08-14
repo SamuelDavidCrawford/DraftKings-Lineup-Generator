@@ -10,7 +10,7 @@
         <GroupBox x:Name="groupBox" Header="Browse for CSV File" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="60" Width="321">
             <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="74,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229"/>
         </GroupBox>
-        <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.288,-0.015" Height="20"/>
+        <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.288,-0.015" Height="20" Click="button_Click"/>
         <GroupBox x:Name="groupBox1" Header="Salary Minimums" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="144" Width="321">
             <Grid HorizontalAlignment="Left" Height="109" Margin="10,10,-2,0" VerticalAlignment="Top" Width="301">
                 <Label x:Name="label1" Content="QB:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
