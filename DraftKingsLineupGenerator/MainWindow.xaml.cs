@@ -82,5 +82,6 @@ namespace DraftKingsLineupGenerator
             var lineUp = new LineUp();
             lineUp.BuildLineUp(matrixReturn, totalMin, _filePath);
         }
+
     }
 }

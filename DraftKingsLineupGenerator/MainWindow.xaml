@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DraftKingsLineupGenerator"
         mc:Ignorable="d"
-        Title="DraftKings Lineup Generator" Height="285.878" Width="349.555" Background="White" BorderBrush="Black" Foreground="Black" Padding="5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="0">
+        Title="DraftKings Lineup Generator" Height="285.878" Width="349.555" Background="White" BorderBrush="Black" Foreground="Black" Padding="5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="0" Visibility="Visible">
     <Grid>
         <GroupBox x:Name="groupBox" Header="Browse for CSV File" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="60" Width="321">
             <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="74,10,0,0" VerticalAlignment="Top" Width="229" IsEnabled="False" MaxLines="1" IsReadOnly="True" IsUndoEnabled="False"/>
@@ -15,7 +15,7 @@
             <Grid HorizontalAlignment="Left" Height="109" Margin="10,10,-2,0" VerticalAlignment="Top" Width="301">
                 <Label x:Name="label1" Content="QB:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label2" Content="RB:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label3" Content="WR:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="WR:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label4" Content="TE:" HorizontalAlignment="Left" Margin="154,15,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label5" Content="TOTAL:" HorizontalAlignment="Left" Margin="154,67,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label6" Content="DST:" HorizontalAlignment="Left" Margin="154,41,0,0" VerticalAlignment="Top"/>
