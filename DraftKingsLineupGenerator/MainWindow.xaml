@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DraftKingsLineupGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DraftKings Lineup Generator" Height="285.878" Width="349.555">
     <Grid>
-        
+        <GroupBox x:Name="groupBox" Header="Browse for CSV File" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="60" Width="321">
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="74,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229"/>
+        </GroupBox>
+        <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.288,-0.015" Height="20"/>
+        <GroupBox x:Name="groupBox1" Header="Salary Minimums" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="144" Width="321">
+            <Grid HorizontalAlignment="Left" Height="109" Margin="10,10,-2,0" VerticalAlignment="Top" Width="301">
+                <Label x:Name="label1" Content="QB:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label2" Content="RB:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="WR:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="TE:" HorizontalAlignment="Left" Margin="154,15,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="TOTAL:" HorizontalAlignment="Left" Margin="154,67,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label6" Content="DST:" HorizontalAlignment="Left" Margin="154,41,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="74,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="74,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="74,172,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="233,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="233,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="233,172,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button2" Content="Generate" HorizontalAlignment="Left" Margin="256,224,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
