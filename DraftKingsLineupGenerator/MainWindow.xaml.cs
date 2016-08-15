@@ -90,9 +90,7 @@ namespace DraftKingsLineupGenerator
                 var matrixReturn = matrixNFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _teMin, _dstMin, _filePath);
                 var lineUp = new NFLLineUp();
                 lineUp.BuildLineUp(matrixReturn, _totalMin, _filePath);
-            }
-
-            if ((bool) radioButton1.IsChecked)
+            } else
             {
                 //--this one is for NBA
                 var matrix = new NBAPlayerMatrix();
