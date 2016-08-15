@@ -60,8 +60,10 @@ namespace DraftKingsLineupGenerator
                                         {
                                             lineUp.Add(playerMatrix[7][jj]);
                                             var utilName = lineUp[7].Name.ToString();
+                                            var guardTestList = new List<string> { pgName, sgName };
+                                            var forwardTestList = new List<string> { sfName, pfName };
                                             var utilTestList = new List<string> { sgName, sfName, pfName, cName, gName, fName };
-
+                                           
                                                 //Calculate Line-up cost (must be between minCost and maxCost=50000)
                                                 var totalCost = 0;
                                                 foreach (var player in lineUp)
@@ -72,7 +74,7 @@ namespace DraftKingsLineupGenerator
                                                 //Cost Check - if within salary range, output the lineup
                                                 if (totalCost <= _maxCost && totalCost >= _minCost)
                                                 {
-                                                    if (!utilTestList.Contains(utilName) && gName != sgName && fName != pfName)
+                                                    if (!utilTestList.Contains(utilName) && !guardTestList.Contains(gName) && !forwardTestList.Contains(fName))
                                                     {
                                                         WriteLineupsToCSVFile();
                                                     }

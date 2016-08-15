@@ -1,0 +1,21 @@
+QB,RB,RB,WR,WR,WR,TE,FLEX,DST,,Instructions,,,,,,
+,,,,,,,,,,1. Locate the player you want to select in the list below ,,,,,,
+,,,,,,,,,,2. Copy the ID of your player (you can use the Name + ID column or the ID column) ,,,,,,
+,,,,,,,,,,3. Paste the ID into the roster position desired ,,,,,,
+,,,,,,,,,,4. You must include an ID for each player; you cannot use just the player's name ,,,,,,
+,,,,,,,,,,5. You can create up to 500 lineups per file ,,,,,,
+ ,,,,,,,,,,,,,,,,
+,,,,,,,,,,Position,Name + ID, Name, ID, Salary,GameInfo,TeamAbbrev 
+,,,,,,,,,,DST,Falcons  (7200559),Falcons ,7200559,3400,Atl@Cle 08:00PM ET,Atl
+,,,,,,,,,,DST,Texans  (7200569),Texans ,7200569,3200,Hou@SF 07:00PM ET,Hou
+,,,,,,,,,,QB,Tom Brady (7199798),Tom Brady,7199798,7000,Chi@NE 08:00PM ET,NE
+,,,,,,,,,,QB,Josh McCown (7199790),Josh McCown,7199790,6500,Atl@Cle 08:00PM ET,Cle
+,,,,,,,,,,RB,Darren Sproles (7199833),Darren Sproles,7199833,6200,Phi@Pit 07:00PM ET,Phi
+,,,,,,,,,,RB,Matt Forte,Anquan Boldin,7200034,6000,Cin@Det 07:30PM ET,Det
+,,,,,,,,,,RB,Marshawn Lynch,Aaron Rodgers,7199819,5500,Oak@GB 08:00PM ET,GB
+,,,,,,,,,,WR,Randall Cobb,DeAngelo Williams,7199834,6000,Phi@Pit 07:00PM ET,Pit
+,,,,,,,,,,WR,Nate Washington (7199986),Nate Washington,7199986,5500,Chi@NE 08:00PM ET,NE
+,,,,,,,,,,WR,Andre Caldwell (7200035),Andre Caldwell,7200035,5000,Cin@Det 07:30PM ET,Det
+,,,,,,,,,,WR,Jacob Tamme (7200117),Jacob Tamme,7200117,4800,Atl@Cle 08:00PM ET,Atl
+,,,,,,,,,,TE,Eric Weems (7199963),Eric Weems,7199963,4000,Atl@Cle 08:00PM ET,Atl
+,,,,,,,,,,TE,Matthew Slater (7199987),Matthew Slater,7199987,4200,Chi@NE 08:00PM ET,NE
