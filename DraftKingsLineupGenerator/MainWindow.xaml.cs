@@ -83,5 +83,9 @@ namespace DraftKingsLineupGenerator
             lineUp.BuildLineUp(matrixReturn, totalMin, _filePath);
         }
 
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
