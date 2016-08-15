@@ -13,22 +13,22 @@
         <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.288,-0.015" Height="20" Click="button_Click"/>
         <GroupBox x:Name="groupBox1" Header="Salary Minimums" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="144" Width="321">
             <Grid HorizontalAlignment="Left" Height="119" VerticalAlignment="Top" Width="301" Margin="10,0,-2,0">
-                <Label x:Name="label1" Content="QB:" HorizontalAlignment="Left" Margin="-12,50,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label2" Content="RB:" HorizontalAlignment="Left" Margin="79,50,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label3" Content="WR:" HorizontalAlignment="Left" Margin="184,50,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label4" Content="TE:" HorizontalAlignment="Left" Margin="-8,81,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label5" Content="TOTAL:" HorizontalAlignment="Left" Margin="184,81,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="label6" Content="DST:" HorizontalAlignment="Left" Margin="79,81,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label1" Content="QB/PG" HorizontalAlignment="Left" Margin="-12,50,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label2" Content="RB/SG" HorizontalAlignment="Left" Margin="93,50,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="WR/SF" HorizontalAlignment="Left" Margin="193,50,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="TE/PF" HorizontalAlignment="Left" Margin="-11,81,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="TOTAL" HorizontalAlignment="Left" Margin="193,81,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label6" Content="DST/C" HorizontalAlignment="Left" Margin="93,81,0,0" VerticalAlignment="Top"/>
                 <RadioButton x:Name="radioButton" Content="NFL" HorizontalAlignment="Left" Margin="-8,17,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" IsChecked="True"/>
                 <RadioButton x:Name="radioButton1" Content="NBA" HorizontalAlignment="Left" Margin="79,17,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
             </Grid>
         </GroupBox>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="42,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="145,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="257,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="42,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="145,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="257,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="59,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="162,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="266,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="59,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="162,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="266,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
         <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
         <Button x:Name="generateButton" Content="Generate" HorizontalAlignment="Left" Margin="256,224,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
     </Grid>

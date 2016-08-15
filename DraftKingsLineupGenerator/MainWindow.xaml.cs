@@ -82,20 +82,26 @@ namespace DraftKingsLineupGenerator
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            if ((bool) radioButton.IsChecked)
+            {
+                //Switch Case for NBA and NFL -- this one is NFL
+                var matrixNFL = new NFLPlayerMatrix();
+                SetNFLMinimums();
+                var matrixReturn = matrixNFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _teMin, _dstMin, _filePath);
+                var lineUp = new NFLLineUp();
+                lineUp.BuildLineUp(matrixReturn, _totalMin, _filePath);
+            }
 
-            //Switch Case for NBA and NFL -- this one is NFL
-            var matrixNFL = new NFLPlayerMatrix();
-            SetNFLMinimums();
-            var matrixReturn = matrixNFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _teMin, _dstMin, _filePath);
-            var lineUp = new NFLLineUp();
-            lineUp.BuildLineUp(matrixReturn, _totalMin, _filePath);
-            
-            //--this one is for NBA
-            //var matrix = new NBAPlayerMatrix();
-            //SetNBAMinimums();
-            //var matrixReturnNBA = matrix.BuildPlayerList(_pgMin, _sgMin, _sfMin, _pfMin, _cMin, _filePath);
-            //var lineUpNBA = new NBALineUp();
-            //lineUpNBA.BuildLineUp(matrixReturnNBA, _totalMin, _filePath);
+            if ((bool) radioButton1.IsChecked)
+            {
+                //--this one is for NBA
+                var matrix = new NBAPlayerMatrix();
+                SetNBAMinimums();
+                var matrixReturnNBA = matrix.BuildPlayerList(_pgMin, _sgMin, _sfMin, _pfMin, _cMin, _filePath);
+                var lineUpNBA = new NBALineUp();
+                lineUpNBA.BuildLineUp(matrixReturnNBA, _totalMin, _filePath);
+            }
+
         }
 
         private void radioButton_Checked(object sender, RoutedEventArgs e)

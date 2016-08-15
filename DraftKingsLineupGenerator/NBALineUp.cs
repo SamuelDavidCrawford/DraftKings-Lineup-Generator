@@ -28,39 +28,39 @@ namespace DraftKingsLineupGenerator
             xlWorkbook = xlApp.Workbooks.Open(filePath);
             xlWorksheet = xlWorkbook.Sheets[1];
 
-            for (var i = 0; i < playerMatrix[0].Count(); i++) //pg's
+            for (var i = 0; i < playerMatrix[0].Count(); i++) //point guards
             {
                 lineUp.Add(playerMatrix[0][i]);
-                for (var j = 0; j < playerMatrix[1].Count(); j++) //sg's
+                var pgName = lineUp[0].Name.ToString();
+                for (var j = 0; j < playerMatrix[1].Count(); j++) //shooting guards
                 {
                     lineUp.Add(playerMatrix[1][j]);
-                    var rb1Name = lineUp[1].Name.ToString();
-                    for (var l = 0; l < playerMatrix[2].Count(); l++) //sf's 
+                    var sgName = lineUp[1].Name.ToString();
+                    for (var l = 0; l < playerMatrix[2].Count(); l++) //small forwards
                     {
                         lineUp.Add(playerMatrix[2][l]);
-                        var rb2Name = lineUp[2].Name.ToString();
-                        for (var k = 0; k < playerMatrix[3].Count(); k++) //pf's 
+                        var sfName = lineUp[2].Name.ToString();
+                        for (var k = 0; k < playerMatrix[3].Count(); k++) //power forwards
                         {
                             lineUp.Add(playerMatrix[3][k]);
-                            var wr1Name = lineUp[3].Name.ToString();
-                            for (var ll = 0; ll < playerMatrix[4].Count(); ll++) //c's
+                            var pfName = lineUp[3].Name.ToString();
+                            for (var ll = 0; ll < playerMatrix[4].Count(); ll++) //centers
                             {
                                 lineUp.Add(playerMatrix[4][ll]);
-                                var wr2Name = lineUp[4].Name.ToString();
-                                for (var w = 0; w < playerMatrix[5].Count(); w++) //how do I flex the guard?
+                                var cName = lineUp[4].Name.ToString();
+                                for (var w = 0; w < playerMatrix[5].Count(); w++) //guards
                                 {
                                     lineUp.Add(playerMatrix[5][w]);
-                                    var wr3Name = lineUp[5].Name.ToString();
-                                    for (var ii = 0; ii < playerMatrix[6].Count(); ii++) //how do I flex the forward?
+                                    var gName = lineUp[5].Name.ToString();
+                                    for (var ii = 0; ii < playerMatrix[6].Count(); ii++) //forwards
                                     {
                                         lineUp.Add(playerMatrix[6][ii]);
-                                        var teName = lineUp[6].Name.ToString();
+                                        var fName = lineUp[6].Name.ToString();
                                         for (var jj = 0; jj < playerMatrix[7].Count(); jj++) //util's
                                         {
                                             lineUp.Add(playerMatrix[7][jj]);
-
-                                                var utilName = lineUp[7].Name.ToString();
-                                                var flexTestList = new List<string> { rb1Name, rb2Name, wr1Name, wr2Name, wr3Name, teName };
+                                            var utilName = lineUp[7].Name.ToString();
+                                            var utilTestList = new List<string> { sgName, sfName, pfName, cName, gName, fName };
 
                                                 //Calculate Line-up cost (must be between minCost and maxCost=50000)
                                                 var totalCost = 0;
@@ -72,7 +72,7 @@ namespace DraftKingsLineupGenerator
                                                 //Cost Check - if within salary range, output the lineup
                                                 if (totalCost <= _maxCost && totalCost >= _minCost)
                                                 {
-                                                    if (!flexTestList.Contains(utilName))
+                                                    if (!utilTestList.Contains(utilName) && gName != sgName && fName != pfName)
                                                     {
                                                         WriteLineupsToCSVFile();
                                                     }
