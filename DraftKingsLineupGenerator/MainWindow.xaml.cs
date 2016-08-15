@@ -24,12 +24,27 @@ namespace DraftKingsLineupGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Global variables
         private string _filePath;
+        private int _totalMin;
+
+        //NFL variables
+        private int _qbMin;
+        private int _rbMin;
+        private int _wrMin;
+        private int _teMin;
+        private int _dstMin;
+        
+        //NBA variables
+        private int _pgMin;
+        private int _sgMin;
+        private int _sfMin;
+        private int _pfMin;
+        private int _cMin;
 
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -67,25 +82,52 @@ namespace DraftKingsLineupGenerator
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            var qbMin = Convert.ToInt32(qbMinSalary.Text);
-            var rbMin = Convert.ToInt32(rbMinSalary.Text);
-            var wrMin = Convert.ToInt32(wrMinSalary.Text);
-            var teMin = Convert.ToInt32(teMinSalary.Text);
-            var dstMin = Convert.ToInt32(dstMinSalary.Text);
-            var totalMin = Convert.ToInt32(totalMinSalary.Text);
 
-
-            //Builds player matrix (QB's, RB's, WR's, TE's, DST's, Flex's)
-            var matrix = new PlayerMatrix();
-            var matrixReturn = matrix.BuildPlayerList(qbMin, rbMin, wrMin, teMin, dstMin, _filePath);
-            //Generates lineups
-            var lineUp = new LineUp();
-            lineUp.BuildLineUp(matrixReturn, totalMin, _filePath);
+            //Switch Case for NBA and NFL -- this one is NFL
+            var matrixNFL = new NFLPlayerMatrix();
+            SetNFLMinimums();
+            var matrixReturn = matrixNFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _teMin, _dstMin, _filePath);
+            var lineUp = new NFLLineUp();
+            lineUp.BuildLineUp(matrixReturn, _totalMin, _filePath);
+            
+            //--this one is for NBA
+            //var matrix = new NBAPlayerMatrix();
+            //SetNBAMinimums();
+            //var matrixReturnNBA = matrix.BuildPlayerList(_pgMin, _sgMin, _sfMin, _pfMin, _cMin, _filePath);
+            //var lineUpNBA = new NBALineUp();
+            //lineUpNBA.BuildLineUp(matrixReturnNBA, _totalMin, _filePath);
         }
 
         private void radioButton_Checked(object sender, RoutedEventArgs e)
         {
-
+            //this is my nFL radio button
         }
+
+        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+        {
+            //this is my NBA radio button
+        }
+
+        private void SetNFLMinimums()
+        {
+            _qbMin = Convert.ToInt32(textBox1.Text);
+            _rbMin = Convert.ToInt32(textBox2.Text);
+            _wrMin = Convert.ToInt32(textBox3.Text);
+            _teMin = Convert.ToInt32(textBox4.Text);
+            _dstMin = Convert.ToInt32(textBox5.Text);
+            _totalMin = Convert.ToInt32(textBox6.Text);
+        }
+
+        private void SetNBAMinimums()
+        {
+            _pgMin = Convert.ToInt32(textBox1.Text);
+            _sgMin = Convert.ToInt32(textBox2.Text);
+            _sfMin = Convert.ToInt32(textBox3.Text);
+            _pfMin = Convert.ToInt32(textBox4.Text);
+            _cMin = Convert.ToInt32(textBox5.Text);
+            _totalMin = Convert.ToInt32(textBox6.Text);
+        }
+
+
     }
 }

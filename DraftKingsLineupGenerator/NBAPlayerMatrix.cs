@@ -4,21 +4,23 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace DraftKingsLineupGenerator
 {
-    public class PlayerMatrix
+    public class NBAPlayerMatrix
     {
         private List<List<Player>> _allPlayers = new List<List<Player>> { }; //returning this
         private string _theFilePath;
-        private List<Player> _qbs = new List<Player> { };
-        private List<Player> _rbs = new List<Player> { };
-        private List<Player> _wrs = new List<Player> { };
-        private List<Player> _tes = new List<Player> { };
-        private List<Player> _dsts = new List<Player> { };
-        private List<Player> _flexs = new List<Player> { };
-        private int _qBCutoffCost;
-        private int _rBCutoffCost;
-        private int _wRCutoffCost;
-        private int _tECutoffCost;
-        private int _dSTCutoffCost;
+        private List<Player> _pgs = new List<Player> { };
+        private List<Player> _sgs = new List<Player> { };
+        private List<Player> _sfs = new List<Player> { };
+        private List<Player> _pfs = new List<Player> { };
+        private List<Player> _cs = new List<Player> { };
+        private List<Player> _gs = new List<Player> { };
+        private List<Player> _fs = new List<Player> { };
+        private List<Player> _utils = new List<Player> { };
+        private int _pgCutoffCost;
+        private int _sgCutoffCost;
+        private int _sfCutoffCost;
+        private int _pfCutoffCost;
+        private int _cCutoffCost;
         private Excel.Application xlApp;
         private Excel.Workbook xlWorkbook;
         private Excel._Worksheet xlWorksheet;
@@ -27,13 +29,13 @@ namespace DraftKingsLineupGenerator
         private Player player;
 
         //Methods to read the positions, Names, Salaries of each player and add to respective lists
-        public List<List<Player>> BuildPlayerList(int qbCutoff, int rbCutoff, int wrCutoff, int teCutoff, int dstCutoff, string fileNameHere)
+        public List<List<Player>> BuildPlayerList(int pgCutoff, int sgCutoff, int sfCutoff, int pfCutoff, int cCutoff, string fileNameHere)
         {
-            this._qBCutoffCost = qbCutoff;
-            this._rBCutoffCost = rbCutoff;
-            this._wRCutoffCost = wrCutoff;
-            this._tECutoffCost = teCutoff;
-            this._dSTCutoffCost = dstCutoff;
+            this._pgCutoffCost = pgCutoff;
+            this._sgCutoffCost = sgCutoff;
+            this._sfCutoffCost = sfCutoff;
+            this._pfCutoffCost = pfCutoff;
+            this._cCutoffCost = cCutoff;
             this._theFilePath = fileNameHere;
 
             //Open excel workbook (.CSV downloaded from DK website)
@@ -82,62 +84,70 @@ namespace DraftKingsLineupGenerator
                     throw new ArgumentException("Can not convert Salary and/or ID to integer value");
                 }
 
-                GenerateNFLLists(player); //Genertate Lists
+                GenerateNBALists(player); //Genertate Lists
             }
 
-            GenerateNFLMatrix(); //Generate Matrix
+            GenerateNBAMatrix(); //Generate Matrix
         }
 
-        private void GenerateNFLLists(Player player)
+        private void GenerateNBALists(Player player)
         {
             //Select case to add players to lists
             switch (player.Position.ToString())
             {
-                case "QB":
-                    if (player.Cost >= _qBCutoffCost)
+                case "PG":
+                    if (player.Cost >= _pgCutoffCost)
                     {
-                        _qbs.Add(player);
+                        _pgs.Add(player);
+                        _gs.Add(player);
+                        _utils.Add(player);
                     }
                     break;
-                case "RB":
-                    if (player.Cost >= _rBCutoffCost)
+                case "SG":
+                    if (player.Cost >= _sgCutoffCost)
                     {
-                        _rbs.Add(player);
-                        _flexs.Add(player);
+                        _sgs.Add(player);
+                        _gs.Add(player);
+                        _utils.Add(player);
                     }
                     break;
-                case "WR":
-                    if (player.Cost >= _wRCutoffCost)
+                case "SF":
+                    if (player.Cost >= _sfCutoffCost)
                     {
-                        _wrs.Add(player);
-                        _flexs.Add(player);
+                        _sfs.Add(player);
+                        _fs.Add(player);
+                        _utils.Add(player);
                     }
                     break;
-                case "TE":
-                    if (player.Cost >= _tECutoffCost)
+                case "PF":
+                    if (player.Cost >= _pfCutoffCost)
                     {
-                        _tes.Add(player);
-                        _flexs.Add(player);
+                        _pfs.Add(player);
+                        _fs.Add(player);
+                        _utils.Add(player);
                     }
                     break;
-                case "DST":
-                    if (player.Cost >= _dSTCutoffCost)
+                case "C":
+                    if (player.Cost >= _cCutoffCost)
                     {
-                        _dsts.Add(player);
+                        _cs.Add(player);
+                        _utils.Add(player);
                     }
                     break;
             }
         }
 
-        private void GenerateNFLMatrix()
+        private void GenerateNBAMatrix()
         {
             //Add lists to matrix here...
-            _allPlayers.Add(_qbs);
-            _allPlayers.Add(_rbs);
-            _allPlayers.Add(_wrs);
-            _allPlayers.Add(_tes);
-            _allPlayers.Add(_dsts);
-            _allPlayers.Add(_flexs);
+            _allPlayers.Add(_pgs);
+            _allPlayers.Add(_sgs);
+            _allPlayers.Add(_sfs);
+            _allPlayers.Add(_pfs);
+            _allPlayers.Add(_cs);
+            _allPlayers.Add(_gs);
+            _allPlayers.Add(_fs);
+            _allPlayers.Add(_utils);
         }
 
         private void CloseExcelDoc()

@@ -64,7 +64,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LineUp.cs" />
+    <Compile Include="NBALineUp.cs" />
+    <Compile Include="NBAPlayerMatrix.cs" />
+    <Compile Include="NFLLineUp.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -72,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Player.cs" />
-    <Compile Include="PlayerMatrix.cs" />
+    <Compile Include="NFLPlayerMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

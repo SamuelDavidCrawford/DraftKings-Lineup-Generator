@@ -5,7 +5,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace DraftKingsLineupGenerator
 {
-    public class LineUp
+    public class NFLLineUp
     {
         //Set the min cost of the lineUp as you so choose
         private int _maxCost = 50000;
