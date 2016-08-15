@@ -98,7 +98,7 @@ namespace DraftKingsLineupGenerator
                 lineUp.RemoveAt(0); //remove qb (emptied list)
             }
 
-            xlWorkbook.SaveAs(@"C:\Users\Samuel Crawford\Documents\C-Sharp\DraftKings\output3.csv");
+            xlWorkbook.SaveAs(_filePath + "-Lineups.csv");
             CloseExcelDoc();
 
         }
