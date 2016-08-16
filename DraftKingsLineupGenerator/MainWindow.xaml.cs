@@ -90,7 +90,7 @@ namespace DraftKingsLineupGenerator
                 var matrixReturn = matrixNFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _teMin, _dstMin, _filePath);
                 var lineUp = new NFLLineUp();
                 lineUp.BuildLineUp(matrixReturn, _totalMin, _filePath);
-            } else
+            } else if ((bool) radioButton1.IsChecked)
             {
                 //--this one is for NBA
                 var matrix = new NBAPlayerMatrix();
@@ -98,6 +98,12 @@ namespace DraftKingsLineupGenerator
                 var matrixReturnNBA = matrix.BuildPlayerList(_pgMin, _sgMin, _sfMin, _pfMin, _cMin, _filePath);
                 var lineUpNBA = new NBALineUp();
                 lineUpNBA.BuildLineUp(matrixReturnNBA, _totalMin, _filePath);
+            } else
+            {
+                var matrixCFL = new CFLPlayerMatrix();
+                SetNFLMinimums();
+                var matrixReturnCF = matrixCFL.BuildPlayerList(_qbMin, _rbMin, _wrMin, _dstMin, _filePath);
+                var lineUpCFL = new CFLLineUp();
             }
 
         }

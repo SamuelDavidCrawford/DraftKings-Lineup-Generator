@@ -64,6 +64,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CFLLineUp.cs" />
+    <Compile Include="CFLPlayerMatrix.cs" />
     <Compile Include="NBALineUp.cs" />
     <Compile Include="NBAPlayerMatrix.cs" />
     <Compile Include="NFLLineUp.cs" />
