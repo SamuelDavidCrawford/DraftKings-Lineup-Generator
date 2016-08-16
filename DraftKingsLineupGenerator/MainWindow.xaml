@@ -21,7 +21,7 @@
                 <Label x:Name="label6" Content="DST/C" HorizontalAlignment="Left" Margin="93,81,0,0" VerticalAlignment="Top"/>
                 <RadioButton x:Name="radioButton" Content="NFL" HorizontalAlignment="Left" Margin="-8,17,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" IsChecked="True"/>
                 <RadioButton x:Name="radioButton1" Content="NBA" HorizontalAlignment="Left" Margin="93,17,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
-                <RadioButton x:Name="radioButton2" Content="CFL" HorizontalAlignment="Left" Margin="193,17,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="radioButton2" Content="CFL" HorizontalAlignment="Left" Margin="193,17,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
             </Grid>
         </GroupBox>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="59,145,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>

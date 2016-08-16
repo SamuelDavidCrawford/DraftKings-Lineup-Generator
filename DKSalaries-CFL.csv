@@ -1,0 +1,87 @@
+QB,RB,WR,WR,FLEX,FLEX,DST,,,,Instructions,,,,,,
+,,,,,,,,,,1. Locate the player you want to select in the list below ,,,,,,
+,,,,,,,,,,2. Copy the ID of your player (you can use the Name + ID column or the ID column) ,,,,,,
+,,,,,,,,,,3. Paste the ID into the roster position desired ,,,,,,
+,,,,,,,,,,4. You must include an ID for each player; you cannot use just the player's name ,,,,,,
+,,,,,,,,,,5. You can create up to 500 lineups per file ,,,,,,
+ ,,,,,,,,,,,,,,,,
+,,,,,,,,,,Position,Name + ID, Name, ID, Salary,GameInfo,TeamAbbrev 
+,,,,,,,,,,QB,Trevor Harris (7206044),Trevor Harris,7206044,10900,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,QB,Bo Levi Mitchell (7206051),Bo Levi Mitchell,7206051,10600,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Chris Williams (7206081),Chris Williams,7206081,10400,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,QB,Henry Burris (7206041),Henry Burris,7206041,10000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Duron Carter (7206089),Duron Carter,7206089,9700,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,QB,Jonathon Jennings (7206053),Jonathon Jennings,7206053,9500,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Marquay McDaniel (7206101),Marquay McDaniel,7206101,8800,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Emmanuel Arceneaux (7206103),Emmanuel Arceneaux,7206103,8500,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,Jerome Messam (7206074),Jerome Messam,7206074,7900,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,QB,Travis Lulay (7206049),Travis Lulay,7206049,7700,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Brad Sinopoli (7206091),Brad Sinopoli,7206091,7600,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,QB,Drew Tate (7206050),Drew Tate,7206050,7500,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Greg Ellingson (7206083),Greg Ellingson,7206083,7400,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,QB,Brock Jensen (7206045),Brock Jensen,7206045,7300,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Tyrell Sutton (7206055),Tyrell Sutton,7206055,7200,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,QB,Kevin Glenn (7206042),Kevin Glenn,7206042,7000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Anthony Allen (7206069),Anthony Allen,7206069,6900,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,QB,Rakeem Cato (7206047),Rakeem Cato,7206047,6800,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Ernest Jackson (7206080),Ernest Jackson,7206080,6700,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Jeremiah Johnson (7206068),Jeremiah Johnson,7206068,6600,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,Travon Van (7206060),Travon Van,7206060,6300,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Brandon Rutley (7206058),Brandon Rutley,7206058,6200,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Bryan Burnham (7206106),Bryan Burnham,7206106,6200,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Shawn Gore (7206109),Shawn Gore,7206109,6100,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,QB,Jonathan Crompton (7206043),Jonathan Crompton,7206043,6000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,QB,Keith Price (7206052),Keith Price,7206052,6000,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,QB,Vernon Adams Jr. (7206046),Vernon Adams Jr.,7206046,6000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,QB,Danny O'Brien (7206048),Danny O'Brien,7206048,6000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,QB,Andrew Buckley (7206054),Andrew Buckley,7206054,6000,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,RB,Nic Grigsby (7206057),Nic Grigsby,7206057,5900,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Bakari Grant (7206104),Bakari Grant,7206104,5700,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Nik Lewis (7206079),Nik Lewis,7206079,5600,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Joe West (7206100),Joe West,7206100,5500,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Nick Moore (7206102),Nick Moore,7206102,5500,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,Chris Rainey (7206072),Chris Rainey,7206072,5400,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,DST,Lions  (7206179),Lions ,7206179,5300,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Kamar Jorden (7206108),Kamar Jorden,7206108,5200,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,DST,Stampeders  (7206180),Stampeders ,7206180,5100,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,DST,Redblacks  (7206178),Redblacks ,7206178,5000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Anthony Parker (7206110),Anthony Parker,7206110,4700,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,B.J. Cunningham (7206084),B.J. Cunningham,7206084,4600,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Kenny Stafford (7206088),Kenny Stafford,7206088,4500,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Greg Wilson (7206111),Greg Wilson,7206111,4500,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,DST,Alouettes  (7206177),Alouettes ,7206177,4400,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Kienan Lafrance (7206065),Kienan Lafrance,7206065,4000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Stefan Logan (7206056),Stefan Logan,7206056,3900,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Tory Harrison (7206070),Tory Harrison,7206070,3900,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Lemar Durant (7206115),Lemar Durant,7206115,3800,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Geraldo Boldewijn (7206107),Geraldo Boldewijn,7206107,3600,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,Roy Finch (7206073),Roy Finch,7206073,3600,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Khalil Paden (7206086),Khalil Paden,7206086,3500,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Jamill Smith (7206090),Jamill Smith,7206090,3400,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Juron Criner (7206085),Juron Criner,7206085,3200,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Samuel Giguere (7206087),Samuel Giguere,7206087,3200,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Jake Harty (7206096),Jake Harty,7206096,3200,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Simon Charbonneau-Campeau (7206113),Simon Charbonneau-Campeau,7206113,3100,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Corbin Louks (7206082),Corbin Louks,7206082,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Marco Iannuzzi (7206105),Marco Iannuzzi,7206105,3000,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Juwan Brescacin (7206112),Juwan Brescacin,7206112,3000,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,WR,Kyle Graves (7206092),Kyle Graves,7206092,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Stephen Adekolu (7206114),Stephen Adekolu,7206114,3000,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,WR,Scott MacDonell (7206093),Scott MacDonell,7206093,3000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Alex Pierzchalski (7206094),Alex Pierzchalski,7206094,3000,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,WR,Alex Charette (7206095),Alex Charette,7206095,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,George Johnson (7206097),George Johnson,7206097,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,A'Dre Fraser (7206098),A'Dre Fraser,7206098,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,WR,Emmitt Tims (7206099),Emmitt Tims,7206099,3000,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Wayne Moore (7206066),Wayne Moore,7206066,2900,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Patrick Lavoie (7206061),Patrick Lavoie,7206061,2800,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Shaquille Murray-Lawrence (7206076),Shaquille Murray-Lawrence,7206076,2700,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,Rob Cote (7206071),Rob Cote,7206071,2600,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,RB,Rolly Lumbala (7206067),Rolly Lumbala,7206067,2500,Cgy@BC 10:00PM ET,BC
+,,,,,,,,,,RB,William Powell (7206059),William Powell,7206059,2500,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Martese Jackson (7206062),Martese Jackson,7206062,2500,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,Charlie Power (7206075),Charlie Power,7206075,2500,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,RB,Brendan Gillanders (7206063),Brendan Gillanders,7206063,2500,Mtl@Ott 07:00PM ET,Ott
+,,,,,,,,,,RB,Jean-Christophe Beaulieu (7206064),Jean-Christophe Beaulieu,7206064,2500,Mtl@Ott 07:00PM ET,Mtl
+,,,,,,,,,,RB,William Langlais (7206077),William Langlais,7206077,2500,Cgy@BC 10:00PM ET,Cgy
+,,,,,,,,,,RB,Pier-Yves Lavergne (7206078),Pier-Yves Lavergne,7206078,2500,Cgy@BC 10:00PM ET,Cgy
